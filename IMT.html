@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let BeratMadan = 62;
+        let TinggiMadan = 1.67;
+        let BeratJoan = 70;
+        let TinggiJoan = 1.67;
+
+        const TotalMadan = BeratMadan / TinggiMadan ** 2;
+        const TotalJoan = BeratJoan / TinggiJoan ** 2;
+
+        madanHigherIMT = TotalMadan > TotalJoan
+
+        console.log(`Imt madan: ${TotalMadan}`);
+        console.log(`Imt joan: ${TotalJoan}`);
+        console.log(`Perbandingan IMT Madan dan Joan : ${madanHigherIMT}`);
+
+        if (madanHigherIMT == true) {
+            console.log("IMT Madan lebih tinggi dari IMT joan") 
+        } else {
+            console.log("IMT Madan lebih rendah dari IMT joan")
+        }
+
+
+    </script>
+
+
+</body>
+</html>
